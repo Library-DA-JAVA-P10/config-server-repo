@@ -1,0 +1,18 @@
+server:
+    port: 9004
+
+#Eureka
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9102/eureka/
+zuul:
+  routes:
+    books:
+      path: /books/**
+      url: http://localhost:9001/books
+    oauth:
+      path: /oauth/**
+      url: http://localhost:8081/spring-security-oauth-server/oauth
+
+
