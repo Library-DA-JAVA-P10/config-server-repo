@@ -1,25 +1,25 @@
 server:
     port: 9004
 
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-value: 123
+#security:
+#  oauth2:
+#    resource:
+#      jwt:
+#        key-value: 123
 #Eureka
 eureka:
     client:
         serviceUrl:
             defaultZone: http://localhost:9102/eureka/
-zuul:
-  sensitiveHeaders: Cookie,Set-Cookie
-  routes:
-
-#    books:
-#      path: /books/**
-#      url: http://localhost:9001/books
-    oauth:
-      path: /oauth/**
-      url: http://localhost:8081/spring-security-oauth-server/oauth
-
+#zuul:
+#  sensitiveHeaders: Cookie,Set-Cookie
+#  routes:
+#
+##    books:
+##      path: /books/**
+##      url: http://localhost:9001/books
+#    oauth:
+#      path: /oauth/**
+#      url: http://localhost:8081/spring-security-oauth-server/oauth
+#
 
