@@ -10,3 +10,13 @@ api:
     login:
         url:
             path: /users/login
+    registration:
+        url:
+            path: /users/users
+authorization:
+    token:
+        header:
+            name: Authorization
+            prefix: Bearer
+token:
+    secret: qsdfgkl4jqdf56gk8lsdfhhg
